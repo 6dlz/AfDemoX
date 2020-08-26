@@ -34,6 +34,7 @@ public class RefreshBeanActivity extends BaseActivity implements View.OnClickLis
     private Button btn_refresh_listview;
     private Button btn_refresh_gridview;
     private Button btn_refresh_recyclerview;
+    private Button btn_refresh_scrollerlayout;
 
     @Override
     public void initView() {
@@ -42,11 +43,13 @@ public class RefreshBeanActivity extends BaseActivity implements View.OnClickLis
         btn_refresh_listview = (Button) findViewById(R.id.btn_refresh_listview);
         btn_refresh_gridview = (Button) findViewById(R.id.btn_refresh_gridview);
         btn_refresh_recyclerview = (Button) findViewById(R.id.btn_refresh_recyclerview);
+        btn_refresh_scrollerlayout = (Button) findViewById(R.id.btn_refresh_scrollerlayout);
 
         btn_refresh_scrollview.setOnClickListener(this);
         btn_refresh_listview.setOnClickListener(this);
         btn_refresh_gridview.setOnClickListener(this);
         btn_refresh_recyclerview.setOnClickListener(this);
+        btn_refresh_scrollerlayout.setOnClickListener(this);
     }
 
     @Override
@@ -74,6 +77,10 @@ public class RefreshBeanActivity extends BaseActivity implements View.OnClickLis
             case R.id.btn_refresh_recyclerview:
                 type = 4;
                 title = "PullToRefreshRecyclerView";
+                break;
+            case R.id.btn_refresh_scrollerlayout:
+                type = 5;
+                title = "PullToRefreshScrollerLayout";
                 break;
         }
         if (type > 0)

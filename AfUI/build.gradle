@@ -26,4 +26,5 @@ dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
     api project(':AfBase')
     api support["banner"]
+    api support["consecutivescroller"]
 }

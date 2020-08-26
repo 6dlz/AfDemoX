@@ -10,7 +10,7 @@ ext {
             applicationId    : "cn.appoa.afdemo",
             compileSdkVersion: 29,
             buildToolsVersion: "29.0.2",
-            minSdkVersion    : 16,
+            minSdkVersion    : 19,
             targetSdkVersion : 29,
             versionCode      : 1,
             versionName      : "1.0.1",
@@ -40,6 +40,7 @@ ext {
             "statusbar"           : "com.wangzhen:dark-status-bar:1.0.0",//状态栏变色
             //控件
             "banner"              : "com.youth.banner:banner:1.4.10",//轮播图
+            "consecutivescroller" : "com.github.donkingliang:ConsecutiveScroller:4.2.0",//滚动
             //图片
             "glide"               : "com.github.bumptech.glide:glide:4.11.0",//加载图片
             "glideannotation"     : "com.github.bumptech.glide:compiler:4.11.0",

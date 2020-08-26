@@ -13,6 +13,7 @@ import cn.appoa.afdemo.base.BaseActivity;
 import cn.appoa.afdemo.fragment.SmartRefreshGridViewFragment;
 import cn.appoa.afdemo.fragment.SmartRefreshListViewFragment;
 import cn.appoa.afdemo.fragment.SmartRefreshRecyclerViewFragment;
+import cn.appoa.afdemo.fragment.SmartRefreshScrollLayoutFragment;
 import cn.appoa.afdemo.fragment.SmartRefreshScrollViewFragment;
 import cn.appoa.afui.titlebar.DefaultTitlebar;
 
@@ -81,6 +82,9 @@ public class SmartRefreshActivity extends BaseActivity {
                 break;
             case 4:
                 fragment = new SmartRefreshRecyclerViewFragment();
+                break;
+            case 5:
+                fragment = new SmartRefreshScrollLayoutFragment();
                 break;
         }
         if (fragment != null) {
